@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------------------------------------
 * Author        : Awaiken
-* Template Name : Axiron - Industry & Manufacturing Factory HTML Template
+* Template Name : 
 * File          : CSS File
 * Version       : 1.0
 * ---------------------------------------------------------------------------------------- */
@@ -464,7 +464,8 @@ a:focus{
 }
 
 .section-title h2{
-	font-size: 48px;
+	font-size: 35px;
+	color: #04456dde;
 	line-height: 1.1em;
 	letter-spacing: -0.01em;
 	margin-bottom: 0;
@@ -955,7 +956,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .about-us{
-	padding: 120px 0;
+	padding: 40px 0;
 }
 
 .about-us-image-box{
@@ -978,7 +979,7 @@ header.main-header .header-sticky.active{
 	width: 100%;
 	height: 100%;
 	aspect-ratio: 1 / 1.032;
-	object-fit: cover;
+	object-fit: contain;
 	border-radius: 14px;
 }
 
@@ -1104,7 +1105,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-us-body-content{
-	width: calc(100% - 260px);
+	/* width: calc(100% - 260px); */
 	align-content: center;
 }
 
@@ -1122,7 +1123,7 @@ header.main-header .header-sticky.active{
 .about-us-body-list ul li{
     position: relative;
     line-height: 1.5em;
-    padding-left: 25px;
+    /* padding-left: 25px; */
     margin-bottom: 15px;
 }
 
@@ -1131,7 +1132,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-us-body-list ul li::before{
-	content: '\f058';
+	/* content: '\f058'; */
     position: absolute;
     font-family: 'Font Awesome 7 Free';
     font-size: 18px;
@@ -1306,7 +1307,7 @@ header.main-header .header-sticky.active{
 	text-transform: capitalize;
 	text-decoration: underline;
 	text-underline-offset: 3px;
-	color: #1199be;
+	color: #04456dde;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -1692,8 +1693,8 @@ header.main-header .header-sticky.active{
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 20px 30px;
-	border-top: 1px solid var(--dark-divider-color);
-	padding-top: 60px;
+	border-top: 1px solid #87878769;
+    padding-top: 30px;
 	margin-top: 60px;
 }
 
@@ -1704,8 +1705,8 @@ header.main-header .header-sticky.active{
 }
 
 .company-slider-title h3{
-	font-size: 20px;
-	color: var(--white-color);
+	font-size: 35px;
+	color: #04456dde;
 }
 
 .company-supports-slider{
@@ -1717,9 +1718,11 @@ header.main-header .header-sticky.active{
 }
 
 .company-supports-logo img{
-	width: 100%;
-	max-width: 164px;
-	height: 40px;
+    width: 120%;
+    max-width: 140%;
+    height: 200px;
+	border: 2px solid #c1c1c1;
+	border-radius: 10px;
 }
 
 /************************************/
@@ -2960,11 +2963,13 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background-image: url('../images/page-header-bg.jpg');
+	/* background-image: url('../images/page-header-bg.jpg'); */
+	background-color: #081b25;
+    background-image: url(../images/dark-section-bg-image.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 300px 0 185px;
+	padding: 20px 0 185px;
 	overflow: hidden;
 }
 
@@ -2977,7 +2982,7 @@ header.main-header .header-sticky.active{
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: var(--primary-color);
+	/* background: var(--primary-color); */
     opacity: 60%;
 	z-index: 1;
 }
@@ -3025,16 +3030,17 @@ header.main-header .header-sticky.active{
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 120px 0;
+    padding: 40px 0;
 }
 
 .approach-item{
-	background-color: var(--bg-color);
+	background-color: #04456d1a;
     border-radius: 14px;
     height: calc(100% - 30px);
     margin-bottom: 30px;
     padding: 10px;
 	transition: all 0.4s ease-in-out;
+	border: 1px solid #00000024;
 }
 
 .approach-item:hover{
@@ -3054,7 +3060,7 @@ header.main-header .header-sticky.active{
 	position: relative;
     width: 40px;
     height: 40px;
-    background: var(--accent-color);
+    background: #04456dde;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -3098,12 +3104,13 @@ header.main-header .header-sticky.active{
 }
 
 .approach-item-body{
-	min-height: 290px;
+	min-height: 190px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 30px;
-	background-color: var(--secondary-color);
+    background-color: #ffffffde;
+    border: 1px solid #04456d45;
     border-radius: 10px;
     padding: 30px;
 }
@@ -3146,7 +3153,7 @@ header.main-header .header-sticky.active{
 }
 
 .global-impact{
-	padding: 120px 0;
+	padding: 40px 0;
 }
 
 .global-impact-list{
@@ -3157,7 +3164,8 @@ header.main-header .header-sticky.active{
 
 .global-impact-item{
 	width: calc(33.33% - 20px);
-    background-color: var(--dark-divider-color);
+    background-color: #fff;
+	border: 2px solid #cfcfcf;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
 	display: flex;
@@ -5278,8 +5286,8 @@ header.main-header .header-sticky.active{
 	}
 
 	.company-supports-logo img{
-        max-width: 144px;
-        height: 34px;
+      max-width: 220px;
+        height: 180px;
     }
 
 	.intro-video{
@@ -5677,7 +5685,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.about-us{
-		padding: 60px 0;
+		padding: 10px 0;
 	}
 
 	.about-us-review-box{
@@ -5914,7 +5922,7 @@ header.main-header .header-sticky.active{
 
 	.our-approach{
 		background-size: 100% auto;
-		padding: 60px 0;
+		padding: 40px 0;
 	}
 
 	.approach-item-header{
@@ -5935,7 +5943,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.global-impact{
-		padding: 60px 0;
+		padding: 30px 0;
 	}
 
 	.global-impact-item{
@@ -9848,7 +9856,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus{
 	position: relative;
     width: 50px;
     height: 50px;
-    background: #2ca9cd;
+    background: #04456dde;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9961,7 +9969,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus{
 	position: relative;
     width: 50px;
     height: 50px;
-    background: #2ca9cd;
+    background: #04456dde;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11786,4 +11794,26 @@ font-size: 30px;
     width: 100%;
     height: 220px;
   }
+}
+
+
+
+
+/* .header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+} */
+
+
+
+
+.client-swip {
+	width: 197.25px;
+	margin-right: 60px !important;
+
 }
