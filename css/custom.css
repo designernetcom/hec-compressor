@@ -2969,7 +2969,7 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 20px 0 185px;
+	padding: 120px 0 70px;
 	overflow: hidden;
 }
 
@@ -4850,7 +4850,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-gallery{
-	padding: 120px 0 90px;
+	padding: 40px 0 20px;
 }
 
 .page-gallery-box .photo-gallery{
@@ -4976,7 +4976,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-contact-us{
-	padding: 120px 0 60px;
+	padding: 20px 0 40px;
 }
 
 .contact-image-form-box{
@@ -5054,13 +5054,15 @@ header.main-header .header-sticky.active{
 	position: relative;
 	height: 50px;
 	width: 50px;
-	background-color: var(--accent-color);
+	color: #061933;
+	background-color: #ffffff;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
 }
+
 
 .contact-info-item .icon-box::before{
 	content: '';
@@ -5069,13 +5071,14 @@ header.main-header .header-sticky.active{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: var(--white-color);
+	color: #061933;
+	background-color: #00a2ff;
 	border-radius: 50%;
 	width: 100%; 
 	height: 100%;
 	transform: scale(0);
 	transition: all 0.4s ease-in-out;
-	z-index: 0;
+	z-index: 1;
 }
 
 .contact-info-item:hover .icon-box::before{
@@ -5084,12 +5087,38 @@ header.main-header .header-sticky.active{
 
 .contact-info-item .icon-box img{
 	width: 100%;
+	position: relative;
 	max-width: 24px;
 	transition: all 0.4s ease-in-out;
 	z-index: 1;
 }
-.contact-info-item:hover .icon-box img{
-	filter: brightness(0) invert(0);
+.contact-info-item:hover .icon-box img {
+    filter: brightness(0); /* makes icon dark */
+}
+
+.contact-info-item .icon-box i{
+    position: relative;
+    z-index: 2; /* keep icon above ::before */
+    font-size: 20px;
+    color: #061933;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact-info-item .icon-box{
+    position: relative;
+    z-index: 1; /* keep icon above ::before */
+    font-size: 20px;
+    color: #061933;
+	background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact-info-item:hover .icon-box i{
+    color: #001e49; /* visible on white background */
+}
+
+.contact-info-item:hover .icon-box i {
+    filter: brightness(0); /* makes icon dark */
 }
 
 .contact-info-item-content{
@@ -5100,11 +5129,14 @@ header.main-header .header-sticky.active{
 	color: var(--white-color);
 	line-height: normal;
     margin: 0 0 5px;
+	font-size: 20px;
+    font-weight: 900;
 }
 
 .contact-info-item-content h2{
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--white-color);
+	font-weight: 400;
 }
 
 .contact-info-item-content h2 a{
@@ -5113,7 +5145,7 @@ header.main-header .header-sticky.active{
 }
 
 .contact-info-item-content h2 a:hover{
-	color: var(--accent-color);
+	color: #c9f0ff;
 }
 
 .contact-us-form{
@@ -5131,7 +5163,7 @@ header.main-header .header-sticky.active{
 	line-height: 1.5em;
 	color: var(--primary-color);
 	background: var(--bg-color);
-	border: none;
+	border: 1px solid #00000024;
 	border-radius: 10px;
 	padding: 13px 20px;
 	box-shadow: none;
@@ -5144,12 +5176,12 @@ header.main-header .header-sticky.active{
 }
 
 .google-map{
-    padding: 60px 0 120px;
+    padding: 10px 0 30px;
 }
 
 .google-map-iframe{
 	width: 100%;
-	height: 600px;
+	height: 250px;
 }
 
 .google-map-iframe iframe{
@@ -9842,6 +9874,7 @@ header.main-header.header-gold .main-menu ul ul li a:focus{
 	height: calc(100% - 30px);
 	margin-bottom: 30px;
 	padding: 30px;
+	border: 1px solid #00000017;
 }
 
 .service-item-header-gold{
