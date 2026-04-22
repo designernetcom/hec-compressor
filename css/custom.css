@@ -3532,7 +3532,7 @@ header.main-header .header-sticky.active{
 	font-size: 20px;
 	line-height: 1.2em;
 	color: var(--white-color);
-	background: var(--accent-color);
+	background: #0093be;
 	padding: 20px 30px;
 }
 
