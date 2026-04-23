@@ -3588,7 +3588,7 @@ header.main-header .header-sticky.active{
 
 .sidebar-cta-box{
 	/* background: var(--primary-color); */
-	    background-image: url(http://127.0.0.1:5500/images/dark-section-bg-image.png);
+	    background-image: url(images/dark-section-bg-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
