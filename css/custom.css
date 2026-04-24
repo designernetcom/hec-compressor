@@ -6844,7 +6844,7 @@ header.main-header .header-sticky.active{
 
 	.contact-image-form-box{
 		gap: 30px;
-		padding: 15px;
+		padding: 0px;
 	}
 
 	.contact-us-image img{
@@ -12592,4 +12592,44 @@ font-size: 22px;
 
 .service-entry img {
 	width: 100%;
+}
+
+
+
+/* ✅ MOBILE FIX */
+@media (max-width: 768px) {
+
+    .contact-us-image {
+        display: none;
+    }
+
+    .contact-info-item-list {
+        position: static; /* REMOVE absolute */
+        margin-top: 15px;
+        background: #003856;
+		background-image: url('images/dark-section-bg-image.png');
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .contact-info-item {
+        gap: 12px;
+    }
+
+    .icon-box {
+        min-width: 35px;
+        height: 35px;
+        font-size: 14px;
+		height: 40px !important;
+    width: 40px !important;
+    }
+
+    .contact-info-item-content h2 {
+        font-size: 14px;
+    }
+
+	.contact-image-form-box {
+    background-color: var(--secondary-color);
+    border: none;
+	}
 }
