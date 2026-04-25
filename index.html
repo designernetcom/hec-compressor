@@ -66,7 +66,7 @@
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <!-- <li class="nav-item submenu"><a class="nav-link" href="index-3.html">Home</a> -->
-                                    <li class=""><a href="" class="nav-link">Home</a>
+                                    <li class=""><a href="index.html" class="nav-link">Home</a>
                                     <!-- <ul>
                                         <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Version 1</a></li>
                                         <li class="nav-item"><a class="nav-link" href="index-4.html">Home - Version 2</a></li>
@@ -111,8 +111,8 @@
                         
                         <!-- Header Btn Start -->
                         <div class="header-btn">
-                            <a href="contact.html" class="btn-default btn-highlighted">Get A Quote</a>
-                        </div>
+    <button class="btn-default btn-highlighted" id="openPopup">Get A Quote</button>
+</div>
                         <!-- Header Btn End -->
                     </div>
 					<!-- Main Menu End -->
@@ -123,6 +123,58 @@
 		</div>
 	</header>
 	<!-- Header End -->
+
+
+
+    <!-- Popup Modal -->
+<div class="popup-overlay" id="popupForm">
+    <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+
+        <h2>Inquiry Form</h2>
+
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" placeholder="Mobile Number" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Subject" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    const openBtn = document.getElementById("openPopup");
+    const closeBtn = document.getElementById("closePopup");
+    const popup = document.getElementById("popupForm");
+
+    openBtn.onclick = () => {
+        popup.style.display = "flex";
+    };
+
+    closeBtn.onclick = () => {
+        popup.style.display = "none";
+    };
+
+    // Close when clicking outside
+    window.onclick = (e) => {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    };
+</script>
     
     <!-- hero Start -->
     <div class="hero-gold dark-section">
